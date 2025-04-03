@@ -1,18 +1,19 @@
-
 FROM node:18 AS build
 
 WORKDIR /obeseapp
-COPY package.json package-lock.json ./
 
+COPY package.json package-lock.json ./
 RUN npm install
 
 COPY . .
 
-RUN npm install --save-dev vite
+RUN npm install -g vite
+
 
 RUN npm run build
 
 FROM nginx:1.23
+
 
 COPY --from=build /obeseapp/dist /usr/share/nginx/html
 
