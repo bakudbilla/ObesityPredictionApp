@@ -7,6 +7,9 @@ RUN npm install
 
 COPY . .
 
+RUN npm install -g vite
+
+
 RUN npm run build
 
 FROM nginx:1.23
