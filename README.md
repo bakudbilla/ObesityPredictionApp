@@ -1,4 +1,4 @@
-# ObesiCheck App (https://obesity-app-latest.onrender.com/)
+ObesiCheck App (https://obesity-app-latest.onrender.com/)
 
 ObesiCHECK is a machine learning web application designed to help individuals monitor their weight levels and track their obesity category. 
 The app classifies users into four categories: Normal weight, Overweight, Obese, and Underweight.
